@@ -29,15 +29,6 @@
 }
 
 th {
-    background-color: red;
-}
-
-#color-input {
-    border: 2px solid var(--content-bg-color);
-    padding: 5px 12px 5px 12px;
-    background-color: var(--content-bg-color);
-    color: var(--secondary-font-color);
-    outline: none;
-    width: 100%;
-    margin-top: 4px;
+    background-color: rgb(0, 105, 241) !important;
+    color: white !important;
 }
