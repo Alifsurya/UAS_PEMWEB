@@ -12,145 +12,148 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="login.js"></script>
+    <script src="anim.js"></script>
   </head>
   <body>
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark p-3">
-      <a class="navbar-brand ps-3 poppins-font" href="index.html">Sistem Informasi Seminar Tugas Akhir - SISTA</a>
-      <div class="btn-group ms-auto">
-        <button type="button" class="btn btn-primary bg-color-transparent">Beranda</button>
-        <button type="button" class="btn btn-primary bg-color-transparent">Jadwal</button>
-        <button type="button" class="btn btn-primary bg-color-transparent">Daftar Seminar</button>
-        <button type="button" class="btn btn-primary bg-color-transparent">Berita</button>
-        <button type="button" class="btn btn-primary bg-color-transparent">Tentang</button>
+    <nav class="nav-bar">
+      <a href="index.html" class="desktop">Sistem Informasi Seminar Tugas Akhir - SISTA</a>
+        <a href="index.html" class="mobile">SISTA</a>
+      <div class="nav-btn">
+        <button id="ham-menu" class="menu" type="button">
+          <hr>
+          <hr>
+          <hr>
+        </button>
       </div>
-      <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-          <ul class="dropdown-menu dropdown-menu-end"aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#!">Settings</a></li>
-            <li><a class="dropdown-item" href="#!">Activity Log</a></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item btn-login" href="login.html" onclick="logout()">Login</a></li>
-            <li><a class="dropdown-item btn-logout" href="login.html" onclick="logout()">Logout</a></li>
-          </ul>
-        </li>
-      </ul>
     </nav>
-    <div class="page-header my-5 mx-5">
-      <strong><h2 class="mb-5 font-weight-bold" id="welcome"></h2></strong>
-      <h2>Alur seminar / Tugas akhir</h2>
-      <div class="alur-container container-fluid d-flex mt-4">
-        <div class="row">
-          <div class="col-sm-3 mb-3 mb-sm-0">
-            <div class="card">
+    <ul id="compact-nav" class="compact-nav">
+      <button class="ham-btn" type="button">Beranda</button>
+      <button class="ham-btn" type="button">Jadwal</button>
+      <button class="ham-btn" type="button">Daftar Seminar</button>
+      <button class="ham-btn" type="button">Berita</button>
+      <button class="ham-btn" type="button">Tentang</button>
+      <a class="ham-btn btn-login" href="login.html" onclick="logout()">Login</a>
+      <a class="ham-btn btn-logout" href="login.html" onclick="logout()">Logout</a>
+    </ul>
+    <div id="main">
+      <div>
+        <h2 id="welcome"></h2>
+        <h2>Alur seminar / Tugas akhir</h2>
+      </div>
+      <div class="alur-container">
+        <div class="container-1">
+          <div class="card-container">
+            <div class="main-card">
               <div class="card-body">
-                <h3 class="card-title d-flex justify-content-center">Langkah 1</h3>
+                <h3 class="card-title">Langkah 1</h3>
                 <hr/>
-                <p class="card-text"><span class="fs-5">Login dan Registrasi</span> <br />jika belum mempunyai akun</p>
-                <a href="login.html" class="btn btn-primary d-flex justify-content-center btn-logout">Masuk ke langkah 1</a>
-                <a href="login.html" class="btn btn-primary d-flex justify-content-center btn-login" >Klik untuk login</a>
+                <p class="card-text">Login dan Registrasi <br><small>(jika belum mempunyai akun)</small></p>
+                <a href="login.html" class="btn btn-logout main-btn">Masuk ke langkah 1</a>
+                <a href="login.html" class="btn btn-login main-btn" >Klik untuk login</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
-            <div class="card">
+          <div class="card-container">
+            <div class="main-card">
               <div class="card-body">
-                <h3 class="card-title d-flex justify-content-center">Langkah 2</h3>
+                <h3 class="card-title">Langkah 2</h3>
                 <hr/>
-                <p class="card-text fs-5">Daftar Peserta Seminar (jadwal)</p>
-                <a href="login.html" class="btn btn-primary d-flex justify-content-center btn-logout">Masuk ke langkah 2</a>
-                <a href="login.html" class="btn btn-primary d-flex justify-content-center btn-login">Klik untuk login</a
-                >
+                <p class="card-text">Daftar Peserta Seminar (jadwal)</p>
+                <a href="login.html" class="btn btn-logout main-btn">Masuk ke langkah 2</a>
+                <a href="login.html" class="btn btn-login main-btn">Klik untuk login</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
-            <div class="card">
+        </div>
+        <div class="container-2">
+          <div class="card-container">
+            <div class="main-card">
               <div class="card-body">
-                <h3 class="card-title d-flex justify-content-center">Langkah 3</h3>
+                <h3 class="card-title">Langkah 3</h3>
                 <hr/>
-                <p class="card-text fs-5">Mengisi Form Peserta Seminar</p>
-                <a href="login.html" class="btn btn-primary d-flex justify-content-center btn-logout" >Masuk ke langkah 3</a>
-                <a href="login.html" class="btn btn-primary d-flex justify-content-center btn-login">Klik untuk login</a>
+                <p class="card-text">Mengisi Form Peserta Seminar</p>
+                <a href="login.html" class="btn btn-logout main-btn" >Masuk ke langkah 3</a>
+                <a href="login.html" class="btn btn-login main-btn">Klik untuk login</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
-            <div class="card">
+          <div class="card-container">
+            <div class="main-card">
               <div class="card-body">
-                <h3 class="card-title d-flex justify-content-center">Langkah 4</h3>
+                <h3 class="card-title">Langkah 4</h3>
                 <hr/>
                 <p class="card-text fs-5">Mengisi Form Daftar Seminar Tugas Akhir</p>
-                <a href="login.html" class="btn btn-primary d-flex justify-content-center btn-logout">Masuk ke langkah 4</a>
-                <a href="login.html" class="btn btn-primary d-flex justify-content-center btn-login">Klik untuk login</a>
+                <a href="login.html" class="btn btn-logout main-btn">Masuk ke langkah 4</a>
+                <a href="login.html" class="btn btn-login main-btn">Klik untuk login</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>No</th>
-                <th>NIM</th>
-                <th>Mahasiswa/i</th>
-                <th>Seminar</th>
-                <th>Waktu</th>
-                <th>Ruangan</th>
-                <th>Peserta</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>0102001</td>
-                <td>Dieogo Armanado</td>
-                <td>Proposal</td>
-                <td>10.00 04-01-2021</td>
-                <td>Online</td>
-                <td>10 (view)</td>
-              </tr>
-
-              <tr>
-                <td>2</td>
-                <td>0102001</td>
-                <td>Ahmad Budiman</td>
-                <td>Seminar Hasil</td>
-                <td>10.00 04-01-2021</td>
-                <td>Online</td>
-                <td>10 (view)</td>
-              </tr>
-
-              <tr>
-                <td>3</td>
-                <td>0102021</td>
-                <td>Fredeline Putri</td>
-                <td>Seminar Akhir</td>
-                <td>10.00 04-01-2021</td>
-                <td>B2304</td>
-                <td>0 (view)</td>
-              </tr>
-
-              <tr>
-                <td>4</td>
-                <td>0110123199</td>
-                <td>Alif Surya Pratama</td>
-                <td>Proposal</td>
-                <td>10.00 04-01-2021</td>
-                <td>B2301</td>
-                <td>0 (view)</td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="table-container">
+        <div class="row">
+          <div class="">
+            <table class="main-table">
+              <thead style="text-align: left;height: 3rem;">
+                <tr>
+                  <th>No</th>
+                  <th>NIM</th>
+                  <th>Mahasiswa/i</th>
+                  <th>Seminar</th>
+                  <th>Waktu</th>
+                  <th>Ruangan</th>
+                  <th>Peserta</th>
+                </tr>
+              </thead>
+  
+              <tbody style="height: 12rem;">
+                <tr>
+                  <td>1</td>
+                  <td>0102001</td>
+                  <td>Dieogo Armanado</td>
+                  <td>Proposal</td>
+                  <td>10.00 04-01-2021</td>
+                  <td>Online</td>
+                  <td>10 (view)</td>
+                </tr>
+  
+                <tr>
+                  <td>2</td>
+                  <td>0102001</td>
+                  <td>Ahmad Budiman</td>
+                  <td>Seminar Hasil</td>
+                  <td>10.00 04-01-2021</td>
+                  <td>Online</td>
+                  <td>10 (view)</td>
+                </tr>
+  
+                <tr>
+                  <td>3</td>
+                  <td>0102021</td>
+                  <td>Fredeline Putri</td>
+                  <td>Seminar Akhir</td>
+                  <td>10.00 04-01-2021</td>
+                  <td>B2304</td>
+                  <td>0 (view)</td>
+                </tr>
+  
+                <tr>
+                  <td>4</td>
+                  <td>0110123199</td>
+                  <td>Alif Surya Pratama</td>
+                  <td>Proposal</td>
+                  <td>10.00 04-01-2021</td>
+                  <td>B2301</td>
+                  <td>0 (view)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
+
+    
     <script>
       let welcomeText = document.getElementById("welcome");
       let user = localStorage.getItem("userLoggedIn");
@@ -158,5 +161,15 @@
         1
       )}`;
     </script>
+    <style>
+      input,
+      textarea,
+      button,
+      select,
+      a,
+      div {
+        -webkit-tap-highlight-color: unset;
+      }
+    </style>
   </body>
 </html>

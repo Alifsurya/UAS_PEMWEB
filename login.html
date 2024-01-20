@@ -11,54 +11,37 @@
     <script src="login.js"></script>
 </head>
 <body>
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark p-3">
-        <a class="navbar-brand ps-3 poppins-font" href="index.html">Sistem Informasi Seminar Tugas Akhir - SISTA</a>
+    <nav class="nav-bar">
+        <a href="index.html" class="desktop">Sistem Informasi Seminar Tugas Akhir - SISTA</a>
+        <a href="index.html" class="mobile">SISTA</a>
     </nav>
 
-    <div id="layoutAuthentication" class="login-form">
-        <div id="layoutAuthentication_content" class="mb-5">
-            <main>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-5">
-                            <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
-                                <div class="card-body">
-                                    <form id="login-form" onsubmit="login()">
-                                        <div class="form-floating mb-3">
-                                            <input class="form-control" id="inputUsername" type="text" placeholder="username" />
-                                            <label for="inputUsername">Username</label>
-                                        </div>
-                                        <div class="form-floating mb-3">
-                                            <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
-                                            <label for="inputPassword">Password</label>
-                                        </div>
-                                        <div class="form-check mb-3">
-                                            <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
-                                            <label class="form-check-label" for="inputRememberPassword">Ingat Password</label>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                            <a class="btn btn-transparent" href="register.html">Buat Akun</a>
-                                            <input type="submit" class="btn btn-primary" value="Masuk">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+    <main>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">Login</div>
+                <div class="card-body">
+                    <form id="login-form" onsubmit="login()">
+                        <div class="form">
+                            <input class="" id="inputUsername" type="text" placeholder="Username" />
+                            <label for="inputUsername">Username</label>
                         </div>
-                    </div>
+                        <div class="form">
+                            <input class="" id="inputPassword" type="password" placeholder="Password" />
+                            <label for="inputPassword">Password</label>
+                        </div>
+                        <div class="checkbox">
+                            <input class="" id="inputRememberPassword" type="checkbox" value="" />
+                            <label class="" for="inputRememberPassword">Ingat Password</label>
+                        </div>
+                        <div class="accBtn">
+                            <a class="btn btn-transparent" href="register.html">Buat Akun</a>
+                            <input type="submit" class="btn btn-primary" value="Masuk">
+                        </div>
+                    </form>
                 </div>
-            </main>
+            </div>
         </div>
-        <div id="layoutAuthentication_footer" class="mt-5 position-fixed bottom-0 w-100">
-            <footer class="py-4 bg-light mt-auto">
-                <div class="container px-4">
-                    <div class="d-flex align-items-center justify-content-center small">
-                        <div class="text-muted">Copyright &copy; AlifSurya 2024</div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </div>
-
+    </main>
 </body>
 </html>
