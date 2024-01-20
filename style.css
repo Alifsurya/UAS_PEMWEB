@@ -1,0 +1,43 @@
+.poppins-font {
+    font-family: 'Poppins', sans-serif;;
+}
+
+.bg-color-transparent {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: black;
+    border: solid 1px #007bff;
+}
+
+.btn-transparent:hover {
+    background-color: #007bff;
+    color: white;
+    border: solid 1px #007bff;
+}
+
+.d-none{
+    display: none !important;
+}
+
+.login-form{
+    position: relative;
+    top: 10vh;
+}
+
+th {
+    background-color: red;
+}
+
+#color-input {
+    border: 2px solid var(--content-bg-color);
+    padding: 5px 12px 5px 12px;
+    background-color: var(--content-bg-color);
+    color: var(--secondary-font-color);
+    outline: none;
+    width: 100%;
+    margin-top: 4px;
+}
