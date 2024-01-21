@@ -18,6 +18,13 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log('1')
         }
     }
+    let welcomeText = document.getElementById("welcome");
+    let user = localStorage.getItem("userLoggedIn");
+    if (user) {
+        welcomeText.innerHTML = `Selamat datang, ${user[0].toUpperCase()}${user.slice(
+            1
+          )}`;
+    }
 })
 
 function login(){

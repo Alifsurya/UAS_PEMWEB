@@ -167,24 +167,5 @@
       </div>
     </div>
   </div>
-
-  <script>
-    let welcomeText = document.getElementById("welcome");
-    let user = localStorage.getItem("userLoggedIn");
-    welcomeText.innerHTML = `Selamat datang, ${user[0].toUpperCase()}${user.slice(
-      1
-    )}`;
-  </script>
-  <style>
-    input,
-    textarea,
-    button,
-    select,
-    a,
-    div {
-      -webkit-tap-highlight-color: unset;
-    }
-  </style>
 </body>
-
 </html>
