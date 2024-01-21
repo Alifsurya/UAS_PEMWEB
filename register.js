@@ -1,11 +1,3 @@
-// let listUsername = []
-// let listPassword = []
-// listUsername = JSON.parse(localStorage.getItem('savedUsername'))
-// listPassword = JSON.parse(localStorage.getItem('savedPassword'))
-// localStorage.setItem('savedUsername', JSON.stringify(listUsername))
-// localStorage.setItem('savedPassword', JSON.stringify(listPassword))
-// localStorage.setItem('savedUsername', listUsername)
-// localStorage.setItem('savedPassword', listPassword)
 let x = localStorage.getItem('savedUsername')
 let y = localStorage.getItem('savedPassword')
 

@@ -12,17 +12,20 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log('1')
         }
     } else{
-        let welcomeText = document.getElementById("welcome")
         let buttonLogin = document.getElementsByClassName("btn-logout")
         for(let i = 0; i < buttonLogin.length; i++){
             buttonLogin[i].classList.add('d-none')
             console.log('1')
         }
-        welcomeText.classList.add('d-none')
+    }
+    let welcomeText = document.getElementById("welcome");
+    let user = localStorage.getItem("userLoggedIn");
+    if (user) {
+        welcomeText.innerHTML = `Selamat datang, ${user[0].toUpperCase()}${user.slice(
+            1
+          )}`;
     }
 })
-
-
 
 function login(){
     let userName = document.getElementById("inputUsername")
@@ -33,19 +36,8 @@ function login(){
     let listPassword = localStorage.getItem('savedPassword')
 
     localStorage.setItem('userLoggedIn', userName.value)
-    // let listUsername = JSON.parse(localStorage.getItem('savedUsername'))
-    // let listPassword = JSON.parse(localStorage.getItem('savedPassword'))
     
     let found = false
-    // for(let i = 0; i < listUsername.length; i++){
-    //     if((userName.value == listUsername[i] && password.value == listPassword[i]) || (userName.value == "alif" && password.value == "alif")){
-    //     form.setAttribute("action", "index.html")
-    //     found = true
-    //     }
-    //     if(found){
-    //         break
-    //     }
-    // }
 
     if((userName.value == listUsername && password.value == listPassword) || (userName.value == "alif" && password.value == "alif")){
     form.setAttribute("action", "index.html")
@@ -57,14 +49,12 @@ function login(){
     if(found == false){
         alert("Kredensial salah!")
     }
-    // if(userName.value == "alif" && password.value == "alif"){
-    //     form.setAttribute("action", "index.html")
-    // } else{
-    //     alert("login invalid!")
-    // }
 }
 
 function logout(){
     isLogin = false
     localStorage.setItem('isLogin', isLogin)
+    localStorage.removeItem('userLoggedIn')
+    location.reload()
 }
+
