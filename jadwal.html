@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Informasi Seminar Tugas Akhir - SISTA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;0,900;1,100&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="login.js"></script>
+    <script src="anim.js"></script>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <a href="index.html" class="desktop">Sistem Informasi Seminar Tugas Akhir - SISTA</a>
+        <a href="index.html" class="mobile">SISTA</a>
+        <div class="nav-btn">
+            <button id="ham-menu" class="menu" type="button">
+                <hr />
+                <hr />
+                <hr />
+            </button>
+        </div>
+    </nav>
+    <ul id="compact-nav" class="compact-nav">
+        <a href="index.html"><button class="ham-btn" type="button">
+                Beranda
+            </button></a>
+        <a href="jadwal.html"><button class="ham-btn" type="button">
+                Jadwal
+            </button></a>
+        <a href="form-peserta.html"><button class="ham-btn" type="button">
+                Form Peserta
+            </button></a>
+        <a href="Berita.html"><button class="ham-btn" type="button">
+                Berita
+            </button></a>
+        <a href="tentang.html"><button class="ham-btn" type="button">
+                Tentang
+            </button></a>
+        <a class="ham-btn btn-login" href="login.html" onclick="logout()">Login</a>
+        <a class="ham-btn btn-logout" href="login.html" onclick="logout()">Logout</a>
+    </ul>
+    <div id="main">
+        <h2>Seminar Proposal</h2>
+        <fieldset class="daftar-card">
+            <legend>Seminar Proposal</legend>
+            <table cellpadding="5">
+                <tbody>
+                    <tr>
+                        <td>NIM</td>
+                        <td>: 0102002</td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>: Dieogo Armado</td>
+                    </tr>
+                    <tr>
+                        <td>Prodi</td>
+                        <td>: Teknik Informatika</td>
+                    </tr>
+                    <tr>
+                        <td>Judul</td>
+                        <td>: "Rancang Bangun Aplikasi Sistem Informasi Seminar Tugas Akhir Berbasis Web Menggunakan MVC
+                            Framework"</td>
+                    </tr>
+                    <tr>
+                        <td>Waktu</td>
+                        <td>: Senin, 4 Januari 2021, 10:00</td>
+                    </tr>
+                    <tr>
+                        <td>Ruangan</td>
+                        <td>: Zoom Online</td>
+                    </tr>
+                    <tr>
+                        <td>Pembimbing</td>
+                        <td>: Sirojul Munir S.SI, M.KOM</td>
+                    </tr>
+                    <tr>
+                        <td>Penguji</td>
+                        <td>: Ahmad Rio M.SI</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </fieldset>
+        <div class="btn-container" id="btn-daftar-jadwal"><a href="daftar.html" class="btn btn-primary">Daftar</a></div>
+        
+    </div>
+
+</body>
+
+<footer>
+  <p></p>
+</footer>
+</html>
