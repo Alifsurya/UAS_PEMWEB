@@ -43,71 +43,16 @@
     <a href="tentang.html"><button class="ham-btn" type="button">
         Tentang
       </button></a>
-      </button>
     <a class="ham-btn btn-login" href="login.html" onclick="logout()">Login</a>
     <a class="ham-btn btn-logout" href="login.html" onclick="logout()">Logout</a>
   </ul>
   <div id="main">
-    <div>
-      <h2 id="welcome"></h2>
-      <h2>Alur seminar / Tugas akhir</h2>
-    </div>
-    <div class="alur-container">
-      <div class="container-1">
-        <div class="card-container">
-          <div class="main-card">
-            <div class="card-body">
-              <h3 class="card-title">Langkah 1</h3>
-              <hr />
-              <p class="card-text">
-                Login dan Registrasi <br /><small>(jika belum mempunyai akun)</small>
-              </p>
-              <a href="login.html" class="btn btn-logout main-btn">Masuk ke langkah 1</a>
-              <a href="login.html" class="btn btn-login main-btn">Klik untuk login</a>
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="main-card">
-            <div class="card-body">
-              <h3 class="card-title">Langkah 2</h3>
-              <hr />
-              <p class="card-text">Daftar Peserta Seminar (jadwal)</p>
-              <a href="jadwal.html" class="btn btn-logout main-btn">Masuk ke langkah 2</a>
-              <a href="login.html" class="btn btn-login main-btn">Klik untuk login</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-2">
-        <div class="card-container">
-          <div class="main-card">
-            <div class="card-body">
-              <h3 class="card-title">Langkah 3</h3>
-              <hr />
-              <p class="card-text">Mengisi Form Peserta Seminar</p>
-              <a href="form-peserta.html" class="btn btn-logout main-btn">Masuk ke langkah 3</a>
-              <a href="login.html" class="btn btn-login main-btn">Klik untuk login</a>
-            </div>
-          </div>
-        </div>
-        <div class="card-container">
-          <div class="main-card">
-            <div class="card-body">
-              <h3 class="card-title">Langkah 4</h3>
-              <hr />
-              <p class="card-text fs-5">
-                Mengisi Form Daftar Seminar Tugas Akhir
-              </p>
-              <a href="tabel-peserta.html" class="btn btn-logout main-btn">Masuk ke langkah 4</a>
-              <a href="login.html" class="btn btn-login main-btn">Klik untuk login</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="table-container">
-      <div class="main-table-row">
+    <h2 style="margin-top: 40px;">Peserta Seminar Tugas Akhir</h2>
+    <div class="btn-container" style="justify-content: left;">
+        <a href="daftar.html"><button class="btn btn-primary">Tambah peserta</button></a>
+    </div>   
+    <div class="table-container table-peserta">
+      <div class="row">
         <div class="">
           <table class="main-table">
             <thead style="text-align: left; height: 3rem">
@@ -119,6 +64,7 @@
                 <th>Waktu</th>
                 <th>Ruangan</th>
                 <th>Peserta</th>
+                <th>Action</th>
               </tr>
             </thead>
 
@@ -131,6 +77,10 @@
                 <td>10.00 04-01-2021</td>
                 <td>Online</td>
                 <td>10 (view)</td>
+                <td class="btn-container">
+                    <button class="btn btn-primary">Simpan</button>
+                    <button class="btn btn-primary btn-red ">Hapus</button>
+                </td>
               </tr>
 
               <tr>
@@ -141,6 +91,10 @@
                 <td>10.00 04-01-2021</td>
                 <td>Online</td>
                 <td>10 (view)</td>
+                <td class="btn-container">
+                    <button class="btn btn-primary">Simpan</button>
+                    <button class="btn btn-primary btn-red ">Hapus</button>
+                </td>
               </tr>
 
               <tr>
@@ -151,6 +105,10 @@
                 <td>10.00 04-01-2021</td>
                 <td>B2304</td>
                 <td>0 (view)</td>
+                <td class="btn-container">
+                    <button class="btn btn-primary">Simpan</button>
+                    <button class="btn btn-primary btn-red ">Hapus</button>
+                </td>
               </tr>
 
               <tr>
@@ -161,6 +119,10 @@
                 <td>10.00 04-01-2021</td>
                 <td>B2301</td>
                 <td>0 (view)</td>
+                <td class="btn-container">
+                    <button class="btn btn-primary">Simpan</button>
+                    <button class="btn btn-primary btn-red ">Hapus</button>
+                </td>
               </tr>
             </tbody>
           </table>
